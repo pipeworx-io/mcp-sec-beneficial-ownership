@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/sec-beneficial-ownership",
+  "title": "Sec Beneficial Ownership",
+  "description": "SEC Schedule 13D / 13G — structured beneficial-ownership filings.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/sec-beneficial-ownership",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-sec-beneficial-ownership",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/sec-beneficial-ownership/mcp"
+    }
+  ]
+}
