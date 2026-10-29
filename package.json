@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-sec-beneficial-ownership",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "SEC Schedule 13D / 13G — structured beneficial-ownership filings.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-sec-beneficial-ownership": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sec-beneficial-ownership"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-sec-beneficial-ownership.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/sec-beneficial-ownership",
   "pipeworx": {
-    "sourceHash": "v1-a16d3ee54ed830bd956f7d1d0f0d2084f45665867b0cc24fd82206eee34f5211",
-    "sourceCommit": "8dbe088fb6f9d2c88f934173742329b4e20a67d6"
+    "mode": "gateway",
+    "slug": "sec-beneficial-ownership",
+    "gatewaySlug": "sec-beneficial-ownership",
+    "sourceHash": "v1-29cf5661a4cdc9cfd38fb82b5a2730887a9595d16259b38e69fd296476a3df78",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
