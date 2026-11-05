@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-sec-beneficial-ownership",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SEC Schedule 13D / 13G — structured beneficial-ownership filings.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "sec-beneficial-ownership",
     "gatewaySlug": "sec-beneficial-ownership",
-    "sourceHash": "v1-29cf5661a4cdc9cfd38fb82b5a2730887a9595d16259b38e69fd296476a3df78",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-2f3924a5e0a7d9eee623c700e40bfc5db172188f949ea944dfa9d3a6dc50f8d4",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
